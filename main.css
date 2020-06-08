@@ -1,0 +1,28 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  margin: 2rem;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+nav ul li a:hover {
+  color: orange;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3rem;
+  width: 75vw;
+  max-width: 900px;
+}
