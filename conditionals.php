@@ -16,7 +16,13 @@ if ($num === '5') {
 } else {
   echo "false";
 }
-//pretty standard so far...
+
+//Ternary, however it needs to be assigned to a variable.
+echo "<br />";
+
+$my_val = 10;
+echo $result = $my_val < 10 ? 'ternary pass' : 'ternary fail';
+
 
 echo "<br />";
 //Logical operators
@@ -72,5 +78,7 @@ switch ($color) {
     break;
 
   default:
-    echo 'Default';
+    echo 'Switch Default';
 }
+
+echo "<br />";
