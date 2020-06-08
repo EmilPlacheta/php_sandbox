@@ -15,7 +15,11 @@ echo $names[2];
 
 //can also create arrays with [] instead of using array()
 $cars = ['Honda', 'Toyota', 'Nissan'];
-$numbers = [1, 2, 3, 4, 5];
+$numbers1 = [1, 2, 3, 4, 5];
+$numbers2 = [6, 7, 8, 9, 10];
+
+//no spread as of yet, appapretnyl to be added.
+//$all_numbers = [...$numbers1, ...$numbers2];
 
 //Adding to array at specific place
 $cars[1] = 'Ford';
@@ -66,3 +70,26 @@ $dog_pack = [
 ];
 
 echo $dog_pack[1][0];
+
+
+$about_me = [
+  "name" => "Aisle Nevertell",
+  "birth_year" => 1902,
+  "favorite_food" => "pizza"
+];
+
+function calculateAge($person_arr)
+{
+  $current_year = date("Y");
+  $age = $current_year - $person_arr["birth_year"];
+  return $age;
+}
+?>
+<h1>Welcome!</h1>
+<h2>About me:</h2>
+<?php
+#Add your code here
+echo "<h3>{$about_me["name"]}</h3>";
+?>
+
+<h2>Now tell me a little about you.</h2>
