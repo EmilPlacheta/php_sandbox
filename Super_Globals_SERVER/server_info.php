@@ -1,10 +1,9 @@
 <?php
 /* 
   ////$_SERVER SUPERGLOBAL 
-  // all superglobals shoulf start with $_ and be ALL CAPS
+  // all superglobals start with $_ and be ALL CAPS
   */
 
-//create server array
 $server = [
   'Host Server Name' => $_SERVER['SERVER_NAME'],
   'Host Header' => $_SERVER['HTTP_HOST'],
@@ -22,12 +21,13 @@ $client = [
 ];
 
 
-//echo $server['Host Server Name'], "<br />";
-//echo $server['Host Header'], "<br />";
-//echo $server['Server Software'], "<br />";
-//print_r($server);
-//echo "<br />", "<br />";
-//print_r($client);
 
 
-  //create client array
+
+/* print '<pre>';
+print_r($client);
+print '</pre>';
+
+print '<pre>';
+print_r($_SERVER);
+print '</pre>'; */
