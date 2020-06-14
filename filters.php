@@ -66,7 +66,12 @@ $filters2 = [
   ],
   'email' => FILTER_VALIDATE_EMAIL
 ];
-
+////Filter whole array with several filters
+//filter_var_arr($arg1,[$arg2])
+//$arg1 - array to be filtered/sanitized
+//$arg2 - array of keys from the $arg1. Each key, will be an associative array with 'filter' key and associated with type of filter. eg: 'filter' => FILTER_VALIDATE_EMIL. 
+//We can aso add another nested associative array after 'filter', with 'options' key,
+// like 'min_range' => [int] {check filters for their individual options}
 print_r(filter_var_array($arr, $filters2));
 
 ?>

@@ -35,7 +35,7 @@ nav ul li a {
   color: #000;
 }
 nav ul li a:hover {
-  color: rgb(162, 99, 245);
+  text-decoration: underline;
 }
 
 .container {
@@ -49,14 +49,34 @@ ul {
   list-style: none;
 }
 
-form {
-  display: table;
-  margin: 2rem;
+.form-container {
+  width: 50vw;
+  margin: 0 auto;
 }
 
-label,
+form {
+  display: grid;
+  margin: 2rem;
+}
+label {
+  font-size: 0.8rem;
+}
+
+textarea,
 input {
-  display: table-cell;
+  margin-bottom: 0.8rem;
+}
+
+.msg-fail {
+  color: #fff;
+  background-color: rgb(128, 18, 18);
+  padding: 0.5rem;
+}
+
+.msg-success {
+  color: #fff;
+  background-color: rgb(25, 141, 64);
+  padding: 0.5rem;
 }
 
 button,
@@ -65,7 +85,6 @@ button,
   padding: 0.7rem 1rem;
   text-transform: uppercase;
   background-color: transparent;
-  margin: 1rem;
 }
 button:hover,
 [type='submit']:hover {
